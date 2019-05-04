@@ -13,6 +13,7 @@ ax=ay=15;
 xv=yv=0;
 trail=[];
 tail=1;
+prevKeyCode=0;
 
 function init(){
 px=py=10;
@@ -21,6 +22,7 @@ ax=ay=15;
 xv=yv=0;
 trail=[];
 tail=1;
+prevKeyCode=0;
 }
 
 function game() {
@@ -58,7 +60,7 @@ function game() {
     ctx.fillRect(ax*gs,ay*gs,gs-2,gs-2);
 
 }
-prevKeyCode=0;
+
 function keyPush(evt) {
     switch(evt.keyCode) {
         case 37:
